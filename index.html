@@ -20,18 +20,18 @@
       </a-entity>
     </a-scene>
 	  <script>
-  const Target = document.querySelector('#target');
-  const Video = document.querySelector('#card');
-  Target.addEventListener("targetFound", event => {
-    Video.play();
-	console.log("Target Found.");
-  });
+    const Target = document.querySelector('#target');
+    const Video = document.querySelector('#card');
+    Target.addEventListener("targetFound", event => {
+      Video.play();
+      console.log("Target Found.");
+    });
 
-	// detect target lost
-  Target.addEventListener("targetLost", event => {
-    Video.pause();
-	console.log("Target Lost.");
-  });
-  </script>
+    // detect target lost
+    Target.addEventListener("targetLost", event => {
+      Video.pause();
+      console.log("Target Lost.");
+    });
+    </script>
   </body>
 </html>
